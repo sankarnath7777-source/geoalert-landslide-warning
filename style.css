@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+:root { font-family: Arial, sans-serif; color: #172033; background: #f4f7fb; }
+body { margin: 0; }
+header { background: #21105d; color: white; padding: 30px 20px; }
+header h1 { margin: 6px 0 10px; font-size: clamp(1.6rem, 5vw, 2.4rem); }
+header p { margin: 0; color: #e8e4ff; }
+.eyebrow { font-weight: bold; letter-spacing: .12em; font-size: .8rem; }
+main { max-width: 900px; margin: 22px auto; padding: 0 16px; }
+.notice, .panel, .status-panel, .card { background: white; border: 1px solid #dce3ed; border-radius: 14px; padding: 18px; }
+.notice { border-left: 5px solid #d97706; line-height: 1.5; margin-bottom: 18px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.card { display: flex; flex-direction: column; gap: 8px; }
+.card span, .card small { color: #5b6578; }
+.card strong { font-size: 2rem; }
+.status-panel, .panel { margin-top: 16px; }
+.status { font-size: 1.25rem; font-weight: bold; color: #176b45; }
+.status.warning { color: #a34a00; }
+.status.danger { color: #b42318; }
+button { background: #c6531b; color: white; border: 0; border-radius: 8px; padding: 12px 18px; font-size: 1rem; font-weight: bold; cursor: pointer; }
+button:focus { outline: 3px solid #f5bd9e; outline-offset: 2px; }
+li { margin: 8px 0; line-height: 1.45; }
+footer { text-align: center; color: #5b6578; padding: 22px; }

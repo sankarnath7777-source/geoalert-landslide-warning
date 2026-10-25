@@ -1,0 +1,5 @@
+timestamp,rainfall_mm_per_hour,soil_moisture_percent,ground_movement_mm,expected_demo_status
+2026-10-25T10:00:00,12,45,0.5,NORMAL
+2026-10-25T10:05:00,55,65,1.2,CAUTION
+2026-10-25T10:10:00,68,88,11.4,HIGH_RISK
+2026-10-25T10:15:00,22,52,0.8,NORMAL

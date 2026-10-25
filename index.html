@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoAlert | Landslide Early Warning Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">GEOALERT TECHNOLOGIES</p>
+    <h1>Landslide Early Warning System</h1>
+    <p>Educational prototype using simulated sensor readings</p>
+  </header>
+  <main>
+    <section class="notice">
+      <strong>Prototype notice:</strong> This demo uses simulated values, not real sensors.
+      It is not suitable for real-world safety decisions.
+    </section>
+    <section class="cards" aria-label="Sensor readings">
+      <article class="card"><span>Rainfall</span><strong id="rainfall">--</strong><small>mm/hour</small></article>
+      <article class="card"><span>Soil moisture</span><strong id="moisture">--</strong><small>%</small></article>
+      <article class="card"><span>Ground movement</span><strong id="movement">--</strong><small>mm</small></article>
+    </section>
+    <section class="status-panel">
+      <h2>Risk status</h2>
+      <p id="status" class="status">Waiting for readings…</p>
+      <p id="explanation">Readings will be checked against example thresholds.</p>
+      <button id="simulate">Generate sample readings</button>
+    </section>
+    <section class="panel">
+      <h2>Example alert logic</h2>
+      <ul>
+        <li>Rainfall at or above 50 mm/hour: elevated rainfall indicator.</li>
+        <li>Soil moisture at or above 80%: high moisture indicator.</li>
+        <li>Ground movement at or above 10 mm: movement indicator.</li>
+      </ul>
+      <p>These thresholds are illustrative only and must be validated by qualified experts before any real deployment.</p>
+    </section>
+  </main>
+  <footer>GeoAlert Technologies · Student prototype</footer>
+  <script src="script.js"></script>
+</body>
+</html>
